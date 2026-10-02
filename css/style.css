@@ -666,10 +666,11 @@ select {
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.25s ease;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
-.ingredient-node:hover, .ingredient-node.active {
+.ingredient-node:hover,
+.ingredient-node.active {
   background: var(--terracotta);
   color: #ffffff;
   border-color: var(--terracotta);
@@ -1877,7 +1878,7 @@ select {
   margin: 0;
 }
 
-@media(max-width:900px) {
+@media(max-width:960px) {
   .nav {
     grid-template-columns: auto 1fr auto;
     position: relative
@@ -1887,7 +1888,15 @@ select {
   .brand {
     text-align: left;
     align-items: flex-start;
-    font-size: 1.8rem !important;
+    font-size: 1.7rem !important;
+  }
+
+  .site-header .brand small,
+  .brand small {
+    font-size: 0.68rem !important;
+    letter-spacing: .18em !important;
+    margin-top: 3px !important;
+    white-space: nowrap !important;
   }
 
   .nav-left {
@@ -1956,8 +1965,8 @@ select {
     display: block
   }
 
-  .nav-right a:not(.bag-link) {
-    display: none
+  .nav-right a {
+    display: none !important;
   }
 
   .menu-toggle {
@@ -2019,21 +2028,115 @@ select {
   }
 }
 
+@media(max-width:768px) {
+  .ingredient-map {
+    min-height: 380px;
+  }
+
+  .ingredient-center {
+    width: 135px;
+    height: 135px;
+    font-size: 1.8rem;
+  }
+
+  .ingredient-node {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    letter-spacing: .08em;
+  }
+
+  .n1 {
+    top: 8%;
+    left: 6%;
+  }
+
+  .n2 {
+    top: 8%;
+    right: 6%;
+  }
+
+  .n3 {
+    bottom: 8%;
+    left: 6%;
+  }
+
+  .n4 {
+    bottom: 8%;
+    right: 6%;
+  }
+}
+
 @media(max-width:600px) {
   .section {
-    padding: 70px 0
+    padding: 60px 0
   }
 
   .hero {
-    padding-top: 50px
+    padding-top: 40px
   }
 
   .hero h1 {
-    font-size: 4.1rem
+    font-size: 3.2rem;
+    line-height: .9;
+  }
+
+  .section-head h2 {
+    font-size: 2.3rem;
+  }
+
+  .eyebrow {
+    font-size: 0.85rem;
+    letter-spacing: .14em;
+  }
+
+  .pill {
+    padding: 8px 13px;
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+
+  .ingredient-map {
+    min-height: 330px;
+  }
+
+  .ingredient-center {
+    width: 115px;
+    height: 115px;
+    font-size: 1.5rem;
+  }
+
+  .ingredient-node {
+    padding: 7px 12px;
+    font-size: 0.75rem;
+    letter-spacing: .06em;
+  }
+
+  .n1 {
+    top: 6%;
+    left: 4%;
+  }
+
+  .n2 {
+    top: 6%;
+    right: 4%;
+  }
+
+  .n3 {
+    bottom: 6%;
+    left: 4%;
+  }
+
+  .n4 {
+    bottom: 6%;
+    right: 4%;
   }
 
   .hero-art {
-    margin-top: 40px
+    margin-top: 35px
   }
 
   .note {

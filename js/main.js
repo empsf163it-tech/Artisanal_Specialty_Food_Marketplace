@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const toggleBtn = dropdown.querySelector(".dropdown-toggle");
     if (toggleBtn) {
       toggleBtn.addEventListener("click", (e) => {
-        if (window.innerWidth <= 900) {
+        if (window.innerWidth <= 960) {
           e.preventDefault();
           dropdown.classList.toggle("is-open");
         }

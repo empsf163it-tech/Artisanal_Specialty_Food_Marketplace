@@ -1,240 +1,322 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Harvest & Hand — an artisan specialty food marketplace.">
-<title>Home | Harvest & Hand</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Harvest & Hand — an artisan specialty food marketplace.">
+  <title>Home | Harvest & Hand</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header class="site-header">
-  <div class="container nav">
-    <div class="nav-left">
-      <a href="index.html" class="active">Home</a>
-      <div class="dropdown">
-        <a href="services.html" class="dropdown-toggle">Services <span class="chevron">▾</span></a>
-        <div class="dropdown-panel">
-          <a href="services.html">All Services</a>
-          <a href="market.html">Market & Discovery</a>
-          <a href="makers.html">Makers Directory</a>
-          <a href="collections.html">Curated Collections</a>
-          <a href="stories.html">Food Stories</a>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="nav-left">
+        <a href="index.html" class="active">Home</a>
+        <div class="dropdown">
+          <a href="services.html" class="dropdown-toggle">Services <span class="chevron">▾</span></a>
+          <div class="dropdown-panel">
+            <a href="services.html">All Services</a>
+            <a href="market.html">Market & Discovery</a>
+            <a href="makers.html">Makers Directory</a>
+            <a href="collections.html">Curated Collections</a>
+            <a href="stories.html">Food Stories</a>
+          </div>
+        </div>
+        <div class="mobile-only">
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a class="bag-link" href="market.html">Bag <span class="bag-count">0</span></a>
         </div>
       </div>
-      <div class="mobile-only">
+      <a class="brand" href="index.html">Harvest & Hand<small>Artisan Food Market</small></a>
+      <div class="nav-right">
         <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
+        <a class="bag-link" href="market.html">Bag <span id="bag-count">0</span></a>
+        <button class="menu-toggle" aria-label="Open menu">☰</button>
       </div>
     </div>
-    <a class="brand" href="index.html">Harvest & Hand<small>Artisan Food Market</small></a>
-    <div class="nav-right">
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-      <a class="bag-link" href="market.html">Bag <span id="bag-count">0</span></a>
-      <button class="menu-toggle" aria-label="Open menu">☰</button>
-    </div>
-  </div>
-</header>
+  </header>
 
-<main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <div class="eyebrow">Small batch · regional · remarkable</div>
-      <h1>Food worth discovering.</h1>
-      <p>Meet extraordinary ingredients, independent makers and carefully curated pantry finds from places worth knowing.</p>
-      <a class="btn" href="market.html">Explore the Market</a>
-      <div class="market-strip">
-        <span class="pill">Pantry</span><span class="pill">Bakery</span><span class="pill">Preserves</span><span class="pill">Beverages</span><span class="pill">Gifts</span>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Small batch · regional · remarkable</div>
+          <h1>Food worth discovering.</h1>
+          <p>Meet extraordinary ingredients, independent makers and carefully curated pantry finds from places worth
+            knowing.</p>
+          <a class="btn" href="market.html">Explore the Market</a>
+          <div class="market-strip">
+            <span class="pill">Pantry</span><span class="pill">Bakery</span><span class="pill">Preserves</span><span
+              class="pill">Beverages</span><span class="pill">Gifts</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=85"
+            alt="Curated artisan food market">
+          <span class="note one">Small batch</span><span class="note two">Made with intention</span>
+        </div>
       </div>
-    </div>
-    <div class="hero-art">
-      <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1400&q=85" alt="Curated artisan food market">
-      <span class="note one">Small batch</span><span class="note two">Made with intention</span>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">Today's market</div><h2>Selected for the table.</h2></div>
-      <p>A rotating selection of distinctive pantry staples, treats and ingredients from independent makers.</p>
-    </div>
-    <div class="product-grid">
-      <article class="product"><div class="product-image"><img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85" alt="Cold pressed olive oil"></div><div class="product-label"><span class="tag">Small batch</span><h3>Golden Olive Oil</h3><p>Andhra Pradesh · Cold pressed</p><div class="price">₹780</div></div></article>
-      <article class="product"><div class="product-image"><img src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=900&q=85" alt="Artisan sourdough"></div><div class="product-label"><span class="tag">Bakery</span><h3>Country Sourdough</h3><p>Slow fermented · Stone baked</p><div class="price">₹340</div></div></article>
-      <article class="product"><div class="product-image"><img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=900&q=85" alt="Dark chocolate"></div><div class="product-label"><span class="tag">Cacao</span><h3>Single-Origin Dark</h3><p>70% cacao · Hand finished</p><div class="price">₹520</div></div></article>
-      <article class="product"><div class="product-image"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85" alt="Artisan preserves"></div><div class="product-label"><span class="tag">Preserves</span><h3>Fig & Spice Preserve</h3><p>Seasonal fruit · Small kettle</p><div class="price">₹410</div></div></article>
-    </div>
-  </div>
-</section>
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Today's market</div>
+            <h2>Selected for the table.</h2>
+          </div>
+          <p>A rotating selection of distinctive pantry staples, treats and ingredients from independent makers.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product">
+            <div class="product-image"><img
+                src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=85"
+                alt="Cold pressed olive oil"></div>
+            <div class="product-label"><span class="tag">Small batch</span>
+              <h3>Golden Olive Oil</h3>
+              <p>Andhra Pradesh · Cold pressed</p>
+              <div class="price">₹780</div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-image"><img
+                src="https://images.unsplash.com/photo-1587241321921-91a834d6d191?auto=format&fit=crop&w=900&q=85"
+                alt="Artisan sourdough"></div>
+            <div class="product-label"><span class="tag">Bakery</span>
+              <h3>Country Sourdough</h3>
+              <p>Slow fermented · Stone baked</p>
+              <div class="price">₹340</div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-image"><img
+                src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=900&q=85"
+                alt="Dark chocolate"></div>
+            <div class="product-label"><span class="tag">Cacao</span>
+              <h3>Single-Origin Dark</h3>
+              <p>70% cacao · Hand finished</p>
+              <div class="price">₹520</div>
+            </div>
+          </article>
+          <article class="product">
+            <div class="product-image"><img
+                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=85"
+                alt="Artisan preserves"></div>
+            <div class="product-label"><span class="tag">Preserves</span>
+              <h3>Fig & Spice Preserve</h3>
+              <p>Seasonal fruit · Small kettle</p>
+              <div class="price">₹410</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-<section class="section dark-section">
-  <div class="container makers">
-    <img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?auto=format&fit=crop&w=1200&q=85" alt="Artisan maker at work">
-    <div class="story-copy">
-      <div class="eyebrow">Meet the makers</div>
-      <h2>Behind every good thing is a person.</h2>
-      <p>We bring independent producers into the spotlight — their places, processes, ingredients and reasons for making things differently.</p>
-      <a class="btn light" href="makers.html">Meet the Makers</a>
-    </div>
-  </div>
-</section>
+    <section class="section dark-section">
+      <div class="container makers">
+        <img src="https://images.unsplash.com/photo-1595475207225-428b62bda831?auto=format&fit=crop&w=1200&q=85"
+          alt="Artisan maker at work">
+        <div class="story-copy">
+          <div class="eyebrow">Meet the makers</div>
+          <h2>Behind every good thing is a person.</h2>
+          <p>We bring independent producers into the spotlight — their places, processes, ingredients and reasons for
+            making things differently.</p>
+          <a class="btn light" href="makers.html">Meet the Makers</a>
+        </div>
+      </div>
+    </section>
 
-<section class="section">
-  <div class="container ingredient">
-    <div class="ingredient-map">
-      <img id="ingredient-img" src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1000&q=85" alt="Artisan Olive Oil Harvest" class="ingredient-bg-img">
-      <div class="ingredient-overlay"></div>
-      <div class="ingredient-center" id="ingredient-title">Olive</div>
-      <button class="ingredient-node n1 active" data-ingredient="olive">Olive</button>
-      <button class="ingredient-node n2" data-ingredient="sesame">Sesame</button>
-      <button class="ingredient-node n3" data-ingredient="cacao">Cacao</button>
-      <button class="ingredient-node n4" data-ingredient="saffron">Saffron</button>
-    </div>
-    <div class="story-copy">
-      <div class="eyebrow">Ingredient stories</div>
-      <h2>Follow the ingredient.</h2>
-      <p id="ingredient-text">Explore regions, makers, harvest stories and small-batch olive products.</p>
-      <a class="btn alt" href="stories.html">Explore Stories</a>
-    </div>
-  </div>
-</section>
+    <section class="section">
+      <div class="container ingredient">
+        <div class="ingredient-map">
+          <img id="ingredient-img"
+            src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1000&q=85"
+            alt="Artisan Olive Oil Harvest" class="ingredient-bg-img">
+          <div class="ingredient-overlay"></div>
+          <div class="ingredient-center" id="ingredient-title">Olive</div>
+          <button class="ingredient-node n1 active" data-ingredient="olive">Olive</button>
+          <button class="ingredient-node n2" data-ingredient="sesame">Sesame</button>
+          <button class="ingredient-node n3" data-ingredient="cacao">Cacao</button>
+          <button class="ingredient-node n4" data-ingredient="saffron">Saffron</button>
+        </div>
+        <div class="story-copy">
+          <div class="eyebrow">Ingredient stories</div>
+          <h2>Follow the ingredient.</h2>
+          <p id="ingredient-text">Explore regions, makers, harvest stories and small-batch olive products.</p>
+          <a class="btn alt" href="stories.html">Explore Stories</a>
+        </div>
+      </div>
+    </section>
 
-<section class="section dark-section">
-  <div class="container">
-    <div class="section-head"><div><div class="eyebrow">Curated collections</div><h2>For every kind of table.</h2></div><p>Thoughtful combinations for weekends, gifting, slow breakfasts and generous gatherings.</p></div>
-    <div class="collection-grid">
-      <a class="collection" href="collections.html" style="background-image:url('https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1000&q=85')"><div><span class="eyebrow">Collection 01</span><h3>Weekend Table</h3></div></a>
-      <a class="collection" href="collections.html" style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=85')"><div><span class="eyebrow">Collection 02</span><h3>Regional Pantry</h3></div></a>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Impact & Traceability</div>
-        <h2>Artisan standards in numbers.</h2>
-      </div>
-      <p>Every bottle, jar and loaf in our market is rooted in direct maker relationships and small-batch craftsmanship.</p>
-    </div>
-    <div class="metrics-grid">
-      <div class="metric-card">
-        <div class="metric-number">140+</div>
-        <div class="metric-label">Artisan Makers</div>
-        <p class="metric-desc">Independent family farms & small-batch producers.</p>
-      </div>
-      <div class="metric-card">
-        <div class="metric-number">38</div>
-        <div class="metric-label">Heritage Regions</div>
-        <p class="metric-desc">Distinct agricultural micro-climates & terroirs.</p>
-      </div>
-      <div class="metric-card">
-        <div class="metric-number">100%</div>
-        <div class="metric-label">Direct Traceable</div>
-        <p class="metric-desc">Full transparency from harvest to your dining table.</p>
-      </div>
-      <div class="metric-card">
-        <div class="metric-number">0</div>
-        <div class="metric-label">Artificial Additives</div>
-        <p class="metric-desc">Pure, unadulterated ingredients preserved with care.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section dark-section">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <div class="eyebrow">Sommelier Pairings</div>
-        <h2>Curated table harmonies.</h2>
-      </div>
-      <p>Discover complementary flavor pairings designed by our lead food curators to elevate everyday meals.</p>
-    </div>
-    <div class="pairing-grid">
-      <div class="pairing-card">
-        <span class="pairing-badge">Earthy & Rich</span>
-        <h3>Stone-Baked Sourdough & Cold Pressed Olive Oil</h3>
-        <p style="font-size:1rem; color:#d9d0c5;">Country fermentation combined with early harvest green olive oil and sea salt flakes.</p>
-        <div class="pairing-items">Pairing 01 · Breakfast & Aperitivo</div>
-      </div>
-      <div class="pairing-card">
-        <span class="pairing-badge">Sweet & Botanical</span>
-        <h3>70% Dark Cacao & Fig Spice Preserves</h3>
-        <p style="font-size:1rem; color:#d9d0c5;">Single-origin roasted cacao paired with kettle-cooked fig jam and warm cardamom notes.</p>
-        <div class="pairing-items">Pairing 02 · Evening Digestif</div>
-      </div>
-      <div class="pairing-card">
-        <span class="pairing-badge">Piquant & Aged</span>
-        <h3>Aged Artisan Cheese & Wild Forest Honey</h3>
-        <p style="font-size:1rem; color:#d9d0c5;">Nutty raw milk cheeses complemented by raw unheated wildflower honey from forest reserves.</p>
-        <div class="pairing-items">Pairing 03 · Cheese Board Accent</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container">
-    <div class="eyebrow">Bring something extraordinary to the table.</div>
-    <h2>Discover food with a story worth telling.</h2>
-    <a class="btn" href="market.html">Enter the Market</a>
-  </div>
-</section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div>
-        <h3>Harvest & Hand</h3>
-        <small class="footer-sub">Artisan Food Market</small>
-        <p>A contemporary digital artisan food market for small-batch products, regional makers and thoughtful tables.</p>
-        <div class="social-links">
-          <a href="#" aria-label="Instagram" class="social-icon">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+    <section class="section dark-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Curated collections</div>
+            <h2>For every kind of table.</h2>
+          </div>
+          <p>Thoughtful combinations for weekends, gifting, slow breakfasts and generous gatherings.</p>
+        </div>
+        <div class="collection-grid">
+          <a class="collection" href="collections.html"
+            style="background-image:url('https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=1000&q=85')">
+            <div><span class="eyebrow">Collection 01</span>
+              <h3>Weekend Table</h3>
+            </div>
           </a>
-          <a href="#" aria-label="Pinterest" class="social-icon">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
-          </a>
-          <a href="#" aria-label="X / Twitter" class="social-icon">
-            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          <a class="collection" href="collections.html"
+            style="background-image:url('https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=1000&q=85')">
+            <div><span class="eyebrow">Collection 02</span>
+              <h3>Regional Pantry</h3>
+            </div>
           </a>
         </div>
       </div>
-      <div>
-        <h4>Explore</h4>
-        <a href="market.html">Market</a>
-        <a href="makers.html">Makers</a>
-        <a href="collections.html">Collections</a>
-        <a href="stories.html">Stories</a>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Impact & Traceability</div>
+            <h2>Artisan standards in numbers.</h2>
+          </div>
+          <p>Every bottle, jar and loaf in our market is rooted in direct maker relationships and small-batch
+            craftsmanship.</p>
+        </div>
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number">140+</div>
+            <div class="metric-label">Artisan Makers</div>
+            <p class="metric-desc">Independent family farms & small-batch producers.</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">38</div>
+            <div class="metric-label">Heritage Regions</div>
+            <p class="metric-desc">Distinct agricultural micro-climates & terroirs.</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">100%</div>
+            <div class="metric-label">Direct Traceable</div>
+            <p class="metric-desc">Full transparency from harvest to your dining table.</p>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">0</div>
+            <div class="metric-label">Artificial Additives</div>
+            <p class="metric-desc">Pure, unadulterated ingredients preserved with care.</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Company</h4>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
+    </section>
+
+    <section class="section dark-section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <div class="eyebrow">Sommelier Pairings</div>
+            <h2>Curated table harmonies.</h2>
+          </div>
+          <p>Discover complementary flavor pairings designed by our lead food curators to elevate everyday meals.</p>
+        </div>
+        <div class="pairing-grid">
+          <div class="pairing-card">
+            <span class="pairing-badge">Earthy & Rich</span>
+            <h3>Stone-Baked Sourdough & Cold Pressed Olive Oil</h3>
+            <p style="font-size:1rem; color:#d9d0c5;">Country fermentation combined with early harvest green olive oil
+              and sea salt flakes.</p>
+            <div class="pairing-items">Pairing 01 · Breakfast & Aperitivo</div>
+          </div>
+          <div class="pairing-card">
+            <span class="pairing-badge">Sweet & Botanical</span>
+            <h3>70% Dark Cacao & Fig Spice Preserves</h3>
+            <p style="font-size:1rem; color:#d9d0c5;">Single-origin roasted cacao paired with kettle-cooked fig jam and
+              warm cardamom notes.</p>
+            <div class="pairing-items">Pairing 02 · Evening Digestif</div>
+          </div>
+          <div class="pairing-card">
+            <span class="pairing-badge">Piquant & Aged</span>
+            <h3>Aged Artisan Cheese & Wild Forest Honey</h3>
+            <p style="font-size:1rem; color:#d9d0c5;">Nutty raw milk cheeses complemented by raw unheated wildflower
+              honey from forest reserves.</p>
+            <div class="pairing-items">Pairing 03 · Cheese Board Accent</div>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Newsletter</h4>
-        <p>Join our table for seasonal releases & maker stories.</p>
-        <form class="footer-newsletter" data-demo>
-          <input type="email" required placeholder="Enter your email">
-          <button type="submit" class="btn">Subscribe</button>
-        </form>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="eyebrow">Bring something extraordinary to the table.</div>
+        <h2>Discover food with a story worth telling.</h2>
+        <a class="btn" href="market.html">Enter the Market</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Harvest & Hand</h3>
+          <small class="footer-sub">Artisan Food Market</small>
+          <p>A contemporary digital artisan food market for small-batch products, regional makers and thoughtful tables.
+          </p>
+          <div class="social-links">
+            <a href="#" aria-label="Instagram" class="social-icon">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Pinterest" class="social-icon">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z" />
+              </svg>
+            </a>
+            <a href="#" aria-label="X / Twitter" class="social-icon">
+              <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <a href="market.html">Market</a>
+          <a href="makers.html">Makers</a>
+          <a href="collections.html">Collections</a>
+          <a href="stories.html">Stories</a>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Newsletter</h4>
+          <p>Join our table for seasonal releases & maker stories.</p>
+          <form class="footer-newsletter" data-demo>
+            <input type="email" required placeholder="Enter your email">
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>© 2026 Harvest & Hand. Crafted for discovery.</span>
+        <span>Small batch · Regional · Remarkable</span>
       </div>
     </div>
-    <div class="copyright">
-      <span>© 2026 Harvest & Hand. Crafted for discovery.</span>
-      <span>Small batch · Regional · Remarkable</span>
-    </div>
-  </div>
-</footer>
-<div class="flash"></div>
-<script src="js/main.js"></script></body></html>
+  </footer>
+  <div class="flash"></div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
