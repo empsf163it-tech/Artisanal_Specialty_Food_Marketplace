@@ -75,10 +75,23 @@ select {
   font-size: 1rem;
   font-weight: 700;
   color: var(--terracotta);
+  margin-bottom: 12px;
+  display: block;
 }
 
 .serif {
   font-family: var(--serif)
+}
+
+h2 {
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: clamp(1.8rem, 2.6vw, 2.4rem);
+  line-height: 1.2;
+  color: var(--text-main);
+  margin-top: 6px;
+  margin-bottom: 12px;
+  max-height: 80px;
 }
 
 .section {
@@ -94,9 +107,10 @@ select {
 }
 
 .section-head h2 {
-  margin: 8px 0 0;
-  font: 600 clamp(2.5rem, 5vw, 4.7rem)/.95 var(--serif);
-  color: var(--text-main)
+  margin: 6px 0 0;
+  font: 600 clamp(1.8rem, 2.6vw, 2.4rem)/1.2 var(--serif);
+  color: var(--text-main);
+  max-height: 80px;
 }
 
 .section-head p {
@@ -384,8 +398,8 @@ select {
 }
 
 .hero h1 {
-  font: 600 clamp(4rem, 9vw, 8.5rem)/.78 var(--serif);
-  letter-spacing: -.055em;
+  font: 600 clamp(3.2rem, 8vw, 8.5rem)/1.15 var(--serif);
+  letter-spacing: -.035em;
   margin: 18px 0 25px;
   color: var(--text-main)
 }
@@ -458,8 +472,16 @@ select {
   gap: 28px
 }
 
+.product-grid.makers-product-grid {
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
 .product {
-  position: relative
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .product-image {
@@ -485,31 +507,41 @@ select {
   border-top: 0;
   position: relative;
   background: var(--dark-card);
-  border-radius: 0 0 4px 4px
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .product-label .tag {
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--terracotta);
   text-transform: uppercase;
   letter-spacing: .12em;
-  font-weight: 700
+  font-weight: 700;
+  margin-bottom: 6px;
+  display: block;
 }
 
 .product-label h3 {
-  font: 600 1.65rem/1 var(--serif);
-  margin: 8px 0;
-  color: var(--text-main)
+  font: 600 1.65rem/1.2 var(--serif);
+  margin: 0 0 8px;
+  color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .product-label p {
-  margin: 0;
+  margin: 0 0 8px;
   color: var(--muted);
-  font-size: 1rem
+  font-size: 1rem;
+  min-height: 2.4em;
 }
 
 .price {
-  margin-top: 10px;
+  margin-top: auto;
+  padding-top: 6px;
   font-weight: 700;
   font-size: 1.1rem;
   color: var(--saffron)
@@ -530,9 +562,10 @@ select {
 }
 
 .story-copy h2 {
-  font: 600 clamp(2.8rem, 5vw, 5.2rem)/.9 var(--serif);
-  margin: 10px 0 22px;
-  color: var(--text-main)
+  font: 600 clamp(1.8rem, 2.6vw, 2.4rem)/1.2 var(--serif);
+  margin: 6px 0 16px;
+  color: var(--text-main);
+  max-height: 80px;
 }
 
 .story-copy p {
@@ -589,8 +622,8 @@ select {
 }
 
 .collection h3 {
-  font: 600 2.6rem/1 var(--serif);
-  margin: 5px 0
+  font: 600 2.6rem/1.2 var(--serif);
+  margin: 8px 0
 }
 
 .ingredient {
@@ -704,9 +737,10 @@ select {
 }
 
 .cta h2 {
-  font: 600 clamp(3rem, 7vw, 6rem)/.86 var(--serif);
-  margin: 15px auto 28px;
-  max-width: 850px
+  font: 600 clamp(1.8rem, 2.6vw, 2.4rem)/1.2 var(--serif);
+  margin: 10px auto 20px;
+  max-width: 850px;
+  max-height: 80px;
 }
 
 .page-hero {
@@ -715,8 +749,8 @@ select {
 }
 
 .page-hero h1 {
-  font: 600 clamp(4rem, 9vw, 7rem)/.8 var(--serif);
-  margin: 12px 0 22px
+  font: 600 clamp(3rem, 7vw, 6.5rem)/1.15 var(--serif);
+  margin: 14px 0 22px
 }
 
 .page-hero p {
@@ -736,25 +770,47 @@ select {
   border: 1px solid var(--line);
   background: var(--dark-card);
   padding: 32px 24px;
-  border-radius: 4px
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .service-number {
   font-size: 1rem;
   color: var(--terracotta);
   letter-spacing: .15em;
-  font-weight: 700
+  font-weight: 700;
+  margin-bottom: 6px;
+  display: block;
 }
 
 .service h3 {
-  font: 600 2rem/1 var(--serif);
-  margin: 14px 0 10px;
-  color: var(--text-main)
+  font: 600 1.8rem/1.25 var(--serif);
+  margin: 0 0 10px;
+  color: var(--text-main);
+  min-height: 2.5em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .service p {
   color: var(--muted);
-  font-size: 1rem
+  font-size: 0.98rem;
+  line-height: 1.55;
+  margin: 0 0 20px;
+  min-height: 4.8em;
+}
+
+.service .btn {
+  margin-top: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .process {
@@ -796,13 +852,17 @@ select {
 }
 
 .about-grid h2 {
-  font: 600 3.8rem/.9 var(--serif);
-  margin: 0
+  font: 600 clamp(1.8rem, 2.6vw, 2.4rem)/1.2 var(--serif);
+  margin: 6px 0 16px;
+  max-height: 80px;
 }
 
 .about-grid p {
   color: var(--muted);
-  font-size: 1rem
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+  line-height: 1.6;
 }
 
 .quote {
@@ -813,7 +873,7 @@ select {
 }
 
 .quote p {
-  font: 600 clamp(2.4rem, 5vw, 5rem)/.95 var(--serif);
+  font: 600 clamp(2rem, 4.5vw, 4.8rem)/1.18 var(--serif);
   max-width: 1000px;
   margin: auto
 }
@@ -875,17 +935,41 @@ select {
   padding-right: 25px
 }
 
+.filter-group {
+  margin-bottom: 28px;
+}
+
+.filter-group:last-child {
+  margin-bottom: 0;
+}
+
 .filters h3 {
   font: 600 1.8rem var(--serif);
-  color: var(--text-main)
+  color: var(--text-main);
+  margin: 0 0 12px;
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .filters label {
   display: block;
-  padding: 8px 0;
+  padding: 8px 12px;
   font-size: 1rem;
   color: var(--muted);
-  cursor: pointer
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  margin: 0;
+}
+
+.filters label:hover,
+.filters label.active {
+  color: var(--terracotta);
+  background: rgba(224, 122, 95, 0.08);
 }
 
 .product-detail {
@@ -909,8 +993,8 @@ select {
 }
 
 .detail-copy h1 {
-  font: 600 clamp(3rem, 6vw, 5.5rem)/.85 var(--serif);
-  margin: 10px 0 20px;
+  font: 600 clamp(2.5rem, 5.5vw, 5.2rem)/1.15 var(--serif);
+  margin: 12px 0 20px;
   color: var(--text-main)
 }
 
@@ -955,10 +1039,22 @@ select {
   gap: 40px
 }
 
+a.footer-brand-link {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0;
+  transition: opacity 0.2s ease;
+}
+
 .footer h3 {
   font: 600 2.4rem var(--serif);
   margin: 0 0 4px;
-  color: var(--text-main)
+  color: var(--text-main);
+  transition: color 0.2s ease;
+}
+
+a.footer-brand-link:hover h3 {
+  color: var(--terracotta);
 }
 
 .footer small.footer-sub {
@@ -1117,7 +1213,7 @@ select {
 }
 
 .metric-number {
-  font: 700 clamp(2.5rem, 4vw, 3.8rem)/1 var(--serif);
+  font: 700 clamp(2.5rem, 4vw, 3.8rem)/1.15 var(--serif);
   color: var(--saffron);
   margin-bottom: 8px;
 }
@@ -1152,6 +1248,9 @@ select {
   border-radius: 4px;
   position: relative;
   transition: transform 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .pairing-card:hover {
@@ -1170,18 +1269,23 @@ select {
   padding: 6px 14px;
   border-radius: 3px;
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .pairing-card h3 {
-  font: 600 1.8rem/1.1 var(--serif);
-  margin: 0 0 12px;
+  font: 600 1.8rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .pairing-card p {
   font-size: 1rem;
   color: var(--muted);
+  margin: 0 0 10px;
+  min-height: 2.6em;
 }
 
 .pairing-items {
@@ -1189,7 +1293,7 @@ select {
   color: var(--saffron);
   border-top: 1px solid var(--line);
   padding-top: 16px;
-  margin-top: 16px;
+  margin-top: auto;
   font-weight: 600;
 }
 
@@ -1210,6 +1314,7 @@ select {
   flex-direction: column;
   justify-content: space-between;
   transition: transform 0.3s ease;
+  height: 100%;
 }
 
 .gift-card:hover {
@@ -1225,14 +1330,19 @@ select {
 }
 
 .gift-card-head h3 {
-  font: 600 2rem/1 var(--serif);
-  margin: 10px 0 8px;
+  font: 600 2rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .gift-card-head p {
   font-size: 1rem;
   color: var(--muted);
+  margin: 0;
+  min-height: 2.6em;
 }
 
 .gift-features {
@@ -1258,6 +1368,11 @@ select {
   font-size: 1.1rem;
 }
 
+.gift-card .btn {
+  margin-top: auto;
+  width: 100%;
+}
+
 /* 4. Quality Blueprint (Services) */
 .blueprint-timeline {
   display: grid;
@@ -1271,12 +1386,15 @@ select {
   border: 1px solid var(--line);
   padding: 30px 22px;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .blueprint-step .step-num {
   font: 700 2.4rem/1 var(--serif);
   color: var(--saffron);
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .blueprint-step h4 {
@@ -1286,6 +1404,9 @@ select {
   letter-spacing: 0.08em;
   margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .blueprint-step p {
@@ -1307,6 +1428,9 @@ select {
   border: 1px solid var(--line);
   padding: 35px 28px;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .manifesto-card .icon-tag {
@@ -1319,14 +1443,17 @@ select {
   place-items: center;
   font-weight: bold;
   font-size: 1.2rem;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   border-radius: 50%;
 }
 
 .manifesto-card h3 {
-  font: 600 1.9rem/1.1 var(--serif);
-  margin: 0 0 12px;
+  font: 600 1.9rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .manifesto-card p {
@@ -1348,38 +1475,52 @@ select {
   border: 1px solid var(--line);
   overflow: hidden;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .curator-card img {
   width: 100%;
-  aspect-ratio: 4/3;
+  aspect-ratio: 1/1;
   object-fit: cover;
+  object-position: center 15%;
 }
 
 .curator-info {
   padding: 24px 22px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .curator-role {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--terracotta);
-  display: block;
-  margin-bottom: 6px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 8px;
+  min-height: 2.6em;
+  line-height: 1.25;
 }
 
 .curator-info h3 {
-  font: 600 1.7rem/1.1 var(--serif);
-  margin: 4px 0 10px;
+  font: 600 1.7rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 1.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .curator-info p {
   font-size: 1rem;
   color: var(--muted);
   margin: 0;
+  min-height: 3.6em;
 }
 
 /* 7. Seasonal Harvest Radar (Market) */
@@ -1430,6 +1571,9 @@ select {
   padding: 22px;
   background: var(--oat);
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .radar-item span {
@@ -1443,9 +1587,12 @@ select {
 }
 
 .radar-item h4 {
-  font: 600 1.5rem/1.1 var(--serif);
-  margin: 4px 0 8px;
+  font: 600 1.5rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .radar-item p {
@@ -1468,18 +1615,25 @@ select {
   padding: 32px 24px;
   text-align: center;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .guarantee-card .badge-icon {
   font-size: 2.2rem;
   color: var(--terracotta);
-  margin-bottom: 14px;
+  margin-bottom: 12px;
 }
 
 .guarantee-card h4 {
-  font: 600 1.6rem/1.1 var(--serif);
-  margin: 0 0 10px;
+  font: 600 1.6rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .guarantee-card p {
@@ -1501,6 +1655,9 @@ select {
   border: 1px solid var(--line);
   border-radius: 4px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .terroir-card img {
@@ -1511,6 +1668,9 @@ select {
 
 .terroir-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .terroir-region {
@@ -1524,9 +1684,12 @@ select {
 }
 
 .terroir-body h3 {
-  font: 600 1.8rem/1.1 var(--serif);
-  margin: 4px 0 10px;
+  font: 600 1.8rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .terroir-body p {
@@ -1550,7 +1713,7 @@ select {
 }
 
 .grant-banner h3 {
-  font: 600 2.3rem/1 var(--serif);
+  font: 600 2.3rem/1.2 var(--serif);
   margin: 10px 0;
   color: var(--saffron);
 }
@@ -1569,6 +1732,9 @@ select {
   padding: 28px;
   border-radius: 4px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .unboxing-step strong {
@@ -1577,13 +1743,16 @@ select {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .unboxing-step h4 {
-  font: 600 1.6rem/1.1 var(--serif);
-  margin: 0 0 10px;
+  font: 600 1.6rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .unboxing-step p {
@@ -1608,6 +1777,10 @@ select {
   text-align: center;
   cursor: pointer;
   transition: 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
 }
 
 .occasion-card:hover {
@@ -1616,9 +1789,13 @@ select {
 }
 
 .occasion-card h4 {
-  font: 600 1.5rem/1.1 var(--serif);
-  margin: 8px 0 6px;
+  font: 600 1.5rem/1.2 var(--serif);
+  margin: 6px 0;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .occasion-card p {
@@ -1640,29 +1817,69 @@ select {
   border: 1px solid var(--line);
   padding: 28px;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.dispatch-card .pairing-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  padding: 10px 14px;
+  background: rgba(224, 122, 95, 0.12);
+  border: 1px solid rgba(224, 122, 95, 0.2);
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--terracotta);
+  box-sizing: border-box;
+  min-height: 40px;
 }
 
 .dispatch-card h3 {
-  font: 600 1.7rem/1.1 var(--serif);
-  margin: 10px 0 8px;
+  font: 600 1.6rem/1.25 var(--serif);
+  margin: 0 0 12px;
   color: var(--text-main);
+  min-height: 2.5em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .dispatch-card p {
-  font-size: 1rem;
+  font-size: 0.98rem;
+  line-height: 1.55;
   color: var(--muted);
   margin: 0 0 16px;
+  min-height: 4.8em;
 }
 
 .dispatch-wave {
-  height: 38px;
+  height: 42px;
   background: rgba(224, 122, 95, 0.12);
-  margin: 16px 0;
+  margin-top: auto;
+  margin-bottom: 12px;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dispatch-card .btn {
+  width: 100%;
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .dispatch-wave span {
@@ -1717,6 +1934,9 @@ select {
   border: 1px solid var(--line);
   border-radius: 4px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .recipe-card img {
@@ -1727,6 +1947,9 @@ select {
 
 .recipe-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .recipe-body .tag {
@@ -1739,15 +1962,19 @@ select {
 }
 
 .recipe-body h3 {
-  font: 600 1.7rem/1.1 var(--serif);
+  font: 600 1.7rem/1.2 var(--serif);
   color: var(--text-main);
-  margin: 4px 0 8px;
+  margin: 0 0 8px;
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .recipe-body p {
   font-size: 1rem;
   color: var(--muted);
   margin: 0;
+  min-height: 2.6em;
 }
 
 /* 15. Tasting Hubs (Contact) */
@@ -1763,17 +1990,24 @@ select {
   border: 1px solid var(--line);
   padding: 32px;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .hub-card h3 {
-  font: 600 1.9rem/1.1 var(--serif);
-  margin: 8px 0 10px;
+  font: 600 1.9rem/1.2 var(--serif);
+  margin: 0 0 8px;
   color: var(--text-main);
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .hub-card p {
   font-size: 1rem;
   color: var(--muted);
+  margin: 0;
 }
 
 /* 16. FAQ Accordion (Contact) */
@@ -1855,6 +2089,9 @@ select {
   border: 1px solid var(--line);
   padding: 28px;
   border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .serving-card .tag {
@@ -1867,9 +2104,12 @@ select {
 }
 
 .serving-card h4 {
-  font: 600 1.6rem/1.1 var(--serif);
+  font: 600 1.6rem/1.2 var(--serif);
   color: var(--text-main);
-  margin: 6px 0 10px;
+  margin: 0 0 8px;
+  min-height: 2.4em;
+  display: flex;
+  align-items: flex-start;
 }
 
 .serving-card p {
@@ -2020,11 +2260,106 @@ select {
   .market-layout {
     grid-template-columns: 1fr
   }
+}
+
+/* ==========================================================================
+   TABLET & MOBILE FILTER LIST (300px - 1000px): SIDE-BY-SIDE BADGES WITH BORDERS & GAPS
+   ========================================================================== */
+@media (min-width: 300px) and (max-width: 1000px) {
+  .market-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
 
   .filters {
     border-right: 0;
     border-bottom: 1px solid var(--line);
-    padding: 0 0 20px
+    padding: 0 0 28px;
+    margin-bottom: 24px;
+    display: block;
+    width: 100%;
+  }
+
+  .filter-group {
+    margin-bottom: 22px;
+    width: 100%;
+  }
+
+  .filter-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .filters h3 {
+    font-size: 1.45rem;
+    margin: 0 0 12px;
+    color: var(--text-main);
+    font-family: var(--serif);
+  }
+
+  .filter-options {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 10px 12px !important;
+    width: 100% !important;
+  }
+
+  .filters label {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 10px 18px !important;
+    font-size: 0.95rem !important;
+    font-weight: 600 !important;
+    color: var(--text-main) !important;
+    background: var(--dark-card) !important;
+    border: 1px solid rgba(245, 239, 227, 0.22) !important;
+    border-radius: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    margin: 0 !important;
+    white-space: nowrap !important;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3) !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+  }
+
+  .filters label:hover {
+    border-color: var(--terracotta) !important;
+    color: var(--terracotta) !important;
+    background: rgba(224, 122, 95, 0.1) !important;
+  }
+
+  .filters label.active {
+    background: var(--terracotta) !important;
+    border-color: var(--terracotta) !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    box-shadow: 0 4px 14px rgba(224, 122, 95, 0.4) !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 600px) {
+  .filter-options {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+  }
+
+  .filter-group:last-child .filter-options {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .filters label {
+    padding: 10px 6px !important;
+    font-size: 0.88rem !important;
+    white-space: normal !important;
+    word-break: break-word !important;
+    width: 100% !important;
+    flex: 1 1 auto !important;
   }
 }
 
@@ -2076,17 +2411,62 @@ select {
   }
 
   .hero h1 {
-    font-size: 3.2rem;
-    line-height: .9;
+    font-size: 2.6rem;
+    line-height: 1.18;
+    margin: 14px 0 20px;
+  }
+
+  .page-hero h1 {
+    font-size: 2.4rem;
+    line-height: 1.18;
+    margin: 12px 0 18px;
   }
 
   .section-head h2 {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 6px 0 12px;
+    max-height: 80px;
+  }
+
+  .about-grid h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 6px 0 12px;
+    max-height: 80px;
+  }
+
+  .story-copy h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 6px 0 12px;
+    max-height: 80px;
+  }
+
+  .cta h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin: 8px auto 16px;
+    max-height: 80px;
+  }
+
+  .detail-copy h1 {
+    font-size: 2.1rem;
+    line-height: 1.18;
+    margin: 10px 0 16px;
+  }
+
+  .quote p {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin: auto;
   }
 
   .eyebrow {
     font-size: 0.85rem;
     letter-spacing: .14em;
+    margin-bottom: 10px;
+    display: block;
   }
 
   .pill {
